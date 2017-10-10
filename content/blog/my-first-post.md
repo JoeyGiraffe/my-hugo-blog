@@ -1,8 +1,8 @@
 ---
 author: "Hd Zhu"
+title: "一只孤独的船"
 date: 2017-09-29T15:25:28+08:00
 tags: ["文摘"]
-title: "一只孤独的船"
 heading: "A Lonely Ship"
 aliases: [
     "/a-lonely-ship/"

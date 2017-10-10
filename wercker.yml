@@ -26,4 +26,5 @@ deploy:
         - lukevivier/gh-pages@0.2.1:
             token: $GIT_TOKEN
             domain: swim2moon.github.io
+            repo: swim2moon/swim2moon.github.io
             basedir: public

@@ -26,10 +26,7 @@ heading title
 
 ```
 
-Questions:
-```
-wercker自动部署
-- deploy target在哪设置？？
-- 最后效果自动public/更新到gh-page分支？？
-- 个人的github.io又怎么展示??还是说要开两个Repos？
-```
+Todos:
+----写博文----
+phpstorm常用配置项
+homestead环境搭建及phpredis安装

@@ -1,6 +1,6 @@
 ---
 author: "Hd Zhu"
-title: "使用HUGO搭建个人博客"
+title: "个人博客的搭建及部署"
 date: 2017-10-10T14:20:43+08:00
 slug: Hugo Blog Tutorial
 draft: true

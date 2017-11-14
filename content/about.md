@@ -1,12 +1,7 @@
 +++
-date = "2015-08-22"
+date = "2017-10-24"
 title = "About"
 +++
 
-_With this theme, it is possible to add small sections that only contains one page like this. It will automatically appears in the header, at the end._
+> *以前是逃避，不管不顾不闻不问，以为这样就可以当作不存在了。走走停停身后一片狼藉。早该好好收拾下自己，借这一方角落记录、整理一些事，用心生活会不一样吧。*
 
-Along with [Ford Prefect](https://en.wikipedia.org/wiki/Ford_Prefect_\(character\)), Dent barely escapes the Earth's destruction as it is demolished to make way for a *hyperspace bypass*. Arthur spends the next several years, still wearing his dressing gown, helplessly launched from crisis to crisis while trying to straighten out his lifestyle.  
- 
-> He rather enjoys tea, but seems to have trouble obtaining it in the far reaches of the galaxy.  
- 
-In time, he learns how to fly and carves a niche for himself as a sandwich-maker.

@@ -7,8 +7,8 @@ draft: true
 ---
 **首先明确下我对个人博客的需求是：**  
 
-- [x] markdown编辑
-- [x] git管理  
+- [x] `markdown`编辑
+- [x] `git`管理  
 - [x] 独立域名
 
 经过一番筛选，我决定选择`Hugo`作为我的博客网站生成器。
@@ -32,15 +32,18 @@ draft: true
 4. 绑定自己的域名  
 
 ### 1. 安装Hugo
+官网教程：https://gohugo.io/getting-started/installing/
+### 2. 下载主题
+我选择的是`cocoa-eh-hugo-theme`主题，当然你也可以选择自己喜欢的主题下载安装：https://github.com/mtn/cocoa-eh-hugo-theme#getting-started
+### 3. wercker部署
+这里`Hugo`官网对于`wercker`还是老版本的教程...
+ 
+### 4. 绑定域名 
+在public目录下创建一个名为`CNAME`的文件，并在该文件中写入自己的域名
 
-### Qulick start:
 
-hugo -t cocoa-eh 生成你的站点静态文件，**cocoa-eh**是你使用的主题名  
-hugo server -w 运行服务器，-w以监控文件的改动  
-hugo new blog/hugo-blog-tutorial.md 新增一篇文章
 
 ...待续
 
 ## 推荐阅读
 - [使用hugo搭建个人博客站点](https://blog.coderzh.com/2015/08/29/hugo/)
-- [使用Hugo搭建个人静态博客](http://www.jianshu.com/p/bdba60260f4d)

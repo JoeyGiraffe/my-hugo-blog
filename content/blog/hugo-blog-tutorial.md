@@ -69,8 +69,10 @@ deploy:
 
 在你购买域名的服务商的域名管理页下，添加两条记录类型为`CNAME`的解析，一条主机记录为`@`，一条主机记录为`www`，记录值格式都为你的`xxxx.github.io`的地址。
 
-
-
-
 ## 推荐阅读
-- [使用hugo搭建个人博客站点](https://blog.coderzh.com/2015/08/29/hugo/)
+1. [Hugo静态网站生成器中文教程](http://nanshu.wang/post/2015-01-31/)
+2. [使用 Hugo 搭建个人静态博客](https://www.jianshu.com/p/bdba60260f4d)
+
+
+
+

@@ -1,8 +1,6 @@
 # swim2moon.github.io
 :clock1030: username.github.io
 
-1. [绑定自己的域名到GitHub-Pages](https://www.zhihu.com/question/31377141)
-2. [安装hugo](https://gohugo.io/getting-started/installing)
 
 新建站点 blog为你的站点目录 `cd Sites hugo new site blog`
 下载主题到themes目录下

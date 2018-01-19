@@ -1,6 +1,6 @@
 ---
 author: "Hd Zhu"
-title: "个人博客的搭建及部署"
+title: "Hugo + Wercker+ GitHub pages搭建博客"
 date: 2017-10-10T14:20:43+08:00
 slug: Hugo Blog Tutorial
 draft: true
@@ -34,16 +34,43 @@ draft: true
 ### 1. 安装Hugo
 官网教程：https://gohugo.io/getting-started/installing/
 ### 2. 下载主题
-我选择的是`cocoa-eh-hugo-theme`主题，当然你也可以选择自己喜欢的主题下载安装：https://github.com/mtn/cocoa-eh-hugo-theme#getting-started
+我挑选的是`cocoa-eh-hugo-theme`主题，当然你也可以选择自己喜欢的主题下载安装：https://github.com/mtn/cocoa-eh-hugo-theme#getting-started
 ### 3. wercker部署
-这里`Hugo`官网对于`wercker`还是老版本的教程...
- 
+这里`Hugo`官网对于`wercker`还是老版本的教程，你可能需要稍微花点时间去了解一番。参考阅读：https://gohugo.io/hosting-and-deployment/deployment-with-wercker
+
+下面是我的`wercker.yml`文件配置，注意替换成自己的域名及仓库名。
+```
+box: debian
+build:
+    steps:
+        - arjen/hugo-build@1.22.0
+deploy:
+    steps:
+        - script:
+            name: install git
+            code: |
+                apt-get update
+                apt-get install git -y
+        - lukevivier/gh-pages@0.2.1:
+            token: $GIT_TOKEN
+            basedir: public
+            domain: handsomezhu.com
+            repo: swim2moon/swim2moon.github.io
+
+```
+默认的`Workflows`只有`build`一项，它会完成生成静态页的工作。我们需要手动创建一个新的`Pipeline`，其`YML Pipeline name`设置为`deploy`，并设置你自己的`GIT_TOKEN`。
+![](/img/deploy.png)
+
+编辑工作流程，添加`deploy`即可，这里可以指定分支，也可以选择默认全部分支。
+![](/img/workflow.png)
+
 ### 4. 绑定域名 
-在public目录下创建一个名为`CNAME`的文件，并在该文件中写入自己的域名
+在`public`目录下创建一个名为`CNAME`的文件，并在该文件中写入自己的域名。    
+
+在你购买域名的服务商的域名管理页下，添加两条记录类型为`CNAME`的解析，一条主机记录为`@`，一条主机记录为`www`，记录值格式都为你的`xxxx.github.io`的地址。
 
 
 
-...待续
 
 ## 推荐阅读
 - [使用hugo搭建个人博客站点](https://blog.coderzh.com/2015/08/29/hugo/)

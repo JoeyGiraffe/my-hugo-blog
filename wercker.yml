@@ -32,4 +32,4 @@ deploy:
             token: $GIT_TOKEN
             basedir: public
             #domain: handsomezhu.com
-            repo: swim2moon/swim2moon.github.io
+            repo: JoeyGiraffe/joeygiraffe.github.io

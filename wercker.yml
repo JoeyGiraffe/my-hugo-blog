@@ -30,7 +30,7 @@ deploy:
                 apt-get install git -y
         - leipert/git-push:
             gh_oauth: $GIT_TOKEN
-            gh_pages: true
+            gh_pages: false
             basedir: public
             gh_pages_domain: joeygiraffe.github.io
             repo: JoeyGiraffe/joeygiraffe.github.io

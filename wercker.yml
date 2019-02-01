@@ -33,3 +33,4 @@ deploy:
             basedir: public
             domain: joeygiraffe.github.io
             repo: JoeyGiraffe/joeygiraffe.github.io
+            branch: master

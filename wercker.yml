@@ -24,8 +24,11 @@ build:
             theme: hugo-tranquilpeak-theme
 deploy:
     steps:
-        - install-packages:
-            packages: git ssh-client
+        - script:
+            name: install git
+            code: |
+              apt-get update
+              apt-get install git -y
         - sf-zhou/gh-pages:
               domain: joey.giraffe.io
               token: $GIT_TOKEN

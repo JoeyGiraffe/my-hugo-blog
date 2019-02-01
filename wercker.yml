@@ -30,8 +30,8 @@ deploy:
               apt-get update
               apt-get install git -y
         - sf-zhou/gh-pages:
-              domain: joey.giraffe.io
               token: $GIT_TOKEN
+              domain: joey.giraffe.io
               repo: JoeyGiraffe/joey.giraffe.io
               branch: master
               basedir: public

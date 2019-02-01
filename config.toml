@@ -212,4 +212,4 @@ canonifyurls = true
 
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
   [params.footer]
-    copyright = "<a href=\"https://github.com/joeygiraffe\">Joey Giraffe | 头大的鸭</a>"
+    copyright = "<a href=\"https://github.com/JoeyGiraffe/my-hugo-blog\">Joey Giraffe | 头大的鸭</a>"

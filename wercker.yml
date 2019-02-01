@@ -28,7 +28,7 @@ deploy:
             code: |
                 apt-get update
                 apt-get install git -y
-        - leipert/git-push:
+        - leipert/git-push@0.7.6:
             gh_oauth: $GIT_TOKEN
             gh_pages: false
             basedir: public

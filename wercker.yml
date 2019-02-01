@@ -37,7 +37,7 @@ deploy:
     steps:
         - install-packages:
             packages: git ssh-client
-        - sf-zhou/gh-pages:@0.2.6:
+        - sf-zhou/gh-pages@0.2.6:
             token: $GIT_TOKEN
             domain: joeygiraffe.github.io
             repo: JoeyGiraffe/joeygiraffe.github.io

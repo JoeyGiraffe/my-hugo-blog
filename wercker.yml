@@ -32,12 +32,12 @@ build:
               git submodule update --remote --recursive
         - arjen/hugo-build@2.8.0:
             theme: hugo-tranquilpeak-theme
+            flags: --buildDrafts=false
 deploy:
     steps:
-
-        - sf-zhou/gh-pages:
-              token: $GIT_TOKEN
-              domain: joey.giraffe.io
-              repo: JoeyGiraffe/joey.giraffe.io
-              branch: master
-              basedir: public
+        - install-packages:
+            packages: git ssh-client
+        - lukevivier/gh-pages@0.2.1:
+            token: $GIT_TOKEN
+            basedir: public
+            repo: JoeyGiraffe/joey.giraffe.io

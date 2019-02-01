@@ -21,6 +21,8 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
     steps:
         - arjen/hugo-build@1.22.0
+            theme: hugo-tranquilpeak-theme
+            flags: --buildDrafts=true
 deploy:
     steps:
         - script:
@@ -31,5 +33,5 @@ deploy:
         - lukevivier/gh-pages@0.2.1:
             token: $GIT_TOKEN
             basedir: public
-            #domain: handsomezhu.com
+            domain: joeygiraffe.github.io
             repo: JoeyGiraffe/joeygiraffe.github.io

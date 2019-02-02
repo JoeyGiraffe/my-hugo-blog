@@ -23,23 +23,27 @@ build:
         - script:
             name: install git
             code: |
-              apt-get update
-              apt-get install git -y
+                apt-get update
+                apt-get install git -y
         - script:
+            # 如果使用submodules, 记得添加配置文件.gitmodules
             name: initialize and update git submodules
             code: |
-              git submodule init
-              git submodule update --remote --recursive
+                git submodule init
+                git submodule update --remote --recursive
         - arjen/hugo-build@2.8.0:
+            # your hugo theme name
             theme: hugo-tranquilpeak-theme
             flags: --buildDrafts=false
 deploy:
     steps:
         - install-packages:
             packages: git ssh-client
+        # 官方给的lukevivier/gh-pages@0.2.1会部署到gh-pages分支，17年我用的时候没这毛病，这里改用别的Step
+        # 部署public目录下的静态文件至username.github.io的master分支
         - sf-zhou/gh-pages@0.2.6:
             token: $GIT_TOKEN
-            domain: joeygiraffe.github.io
+            domain: handsomezhu.me
             repo: JoeyGiraffe/joeygiraffe.github.io
             branch: master
             basedir: public

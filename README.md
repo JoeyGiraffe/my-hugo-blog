@@ -1,3 +1,5 @@
+[my-hugo-blog](https://joeygiraffe.github.io)
+
 ## QUICK STATR
 1. 下载博客主题
 ```

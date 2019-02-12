@@ -2,7 +2,7 @@
 title: "一只孤独的船"  
 slug: my-first-post
 thumbnailImagePosition: left  
-thumbnailImage: /images/ship.jpg    
+thumbnailImage: /images/my-first-post/ship.jpg    
 metaAlignment: center  
 coverMeta: out  
 date: 2017-09-29  
@@ -10,12 +10,14 @@ categories:
 - READING NOTES
 tags:
 - READING NOTES
+
 showSocial: false
+
 ---
 
 <!--more-->
 <center>
-![](/images/ship.jpg)
+![](/images/my-first-post/ship.jpg)
 
 一只船孤独地航行在海上，  
 它既不寻求幸福，  

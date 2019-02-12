@@ -7,9 +7,10 @@ metaAlignment: center
 coverMeta: out  
 date: 2017-09-29  
 categories:
-- READING NOTES
+- reading notes
+- novels
 tags:
-- READING NOTES
+- reading notes
 
 showSocial: false
 

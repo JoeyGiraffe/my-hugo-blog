@@ -5,11 +5,11 @@ metaAlignment: center
 coverMeta: out  
 date: 2017-10-10  
 categories:
-- TUTORIAL
+- tutorial
 tags:
-- Hugo
-- Github Pages
-- Wercker  
+- hugo
+- github pages
+- wercker  
 
 showSocial: false  
 

@@ -1,3 +1,4 @@
 [submodule "themes/hugo-rapid-theme"]
 	path = themes/hugo-tranquilpeak-theme
-	url = https://github.com/kakawait/hugo-tranquilpeak-theme.git
+	# fork原仓库，方便对主题进行修改
+	url = https://github.com/JoeyGiraffe/hugo-tranquilpeak-theme.git

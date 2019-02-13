@@ -37,8 +37,8 @@ Hugo的安装非常简单，可参考【[官网教程](https://gohugo.io/getting
     hugo new site my-hugo-blog #新建站点
     cd my-hugo-blog/themes
     git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git #下载主题
-## Wercker部署
 
+## Wercker部署
 新建仓库`my-hugo-blog`作为代码仓库，管理`Hugo`的全部源文件。新建仓库`username.github.io`作为博客的静态页仓库（username替换为自己的github用户名）。  
 工程根目录下创建`wercker.yml`，下面是我的配置可参考，注意把domain， repo替换成自己的域名及仓库名。
 {{< codeblock "wercker.yml" "go" "https://github.com/JoeyGiraffe/my-hugo-blog/blob/master/wercker.yml" "wercker.yml" >}}

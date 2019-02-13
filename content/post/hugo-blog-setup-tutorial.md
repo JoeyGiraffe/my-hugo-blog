@@ -11,7 +11,7 @@ tags:
 - github pages
 - wercker  
 
-showSocial: false  
+#showSocial: false  
 
 ---
 

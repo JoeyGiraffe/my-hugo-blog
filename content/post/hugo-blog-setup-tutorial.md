@@ -9,10 +9,12 @@ categories:
 tags:
 - hugo
 - github pages
+- wercker   
+keywords:
+- hugo
+- blog
+- github pages
 - wercker  
-
-#showSocial: false  
-
 ---
 
 使用`Hugo`生成静态博客托管于`GitHub Pages`之上，并利用`Wercker`实现自动部署。

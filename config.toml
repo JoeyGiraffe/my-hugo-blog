@@ -80,9 +80,15 @@ canonifyurls = true
 [[menu.links]]
   weight = 1
   identifier = "github"
-  name = "GitHub"
+  name = "Github"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
   url = "https://github.com/joeygiraffe"
+[[menu.links]]
+  weight = 1
+  identifier = "twitter"
+  name = "Twitter"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
+  url = "https://twitter.com/joeyohoh"
 [[menu.links]]
   weight = 2
   identifier = "email"
@@ -186,10 +192,10 @@ canonifyurls = true
   # Comment and uncomment to enable or disable sharing options
   # If you wanna add a sharing option, read user documentation :
   # Tranquilpeak configuration > Theme configuration > sharing-options
-  # [[params.sharingOptions]]
-  #  name = "Facebook"
-  #  icon = "fa-facebook-official"
-  #  url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+  [[params.sharingOptions]]
+    name = "Facebook"
+    icon = "fa-facebook-official"
+    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
 
   [[params.sharingOptions]]
     name = "Twitter"

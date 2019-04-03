@@ -16,7 +16,7 @@ keywords:
 
 注意：`Java Plugin`不包含 `api()`方法。
 <!--more-->
-使用Gradle构建多模块项目，子模块A依赖于子模块B，并且A、B都需要用同一jar包`。替换 `implementation`为`api`时报错：
+使用Gradle构建多模块项目，子模块A依赖于子模块B，并且A、B都需要用同一jar包。替换`implementation`为`api`时报错：
 
 > Could not find method api() for arguments [org.springframework.boot:spring-boot-starter-data-jpa] on object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.
 
